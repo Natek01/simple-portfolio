@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message-me</title>
-    <link rel="stylesheet" href="inform-me.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <form onsubmit="return validateForm()">
+<body class="grid h-screen place-items-center align-center">
+
     
-        <main>
-            <h1>Let's impact the digital!</h1>
-            <p>What is on you mind?</p>
-            <p id="modifier"></p>
-            
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea placeholder="write your brilliant ideas"></textarea>
-            <button type="submit" id="my-button">Submit</button>
-            
-        </main>
-    </form>
-    <script src="index.js"></script>
+        
+        <form class="flex flex-col gap-4 w-[80%] max-w-lg mx-auto bg-white shadow-lg p-6 rounded-md">
+            <h2 class="text-xl text-blue-500 text-center ">Contact me....</h2>
+            <input type="text" placeholder="Your Name" class="p-2 border border-gray-300 rounded outline-none">
+            <input type="email" placeholder="Your Email" class="p-2 border border-gray-300 rounded outline-none">
+            <textarea placeholder="Your Message" class="p-2 border border-gray-300 rounded outline-none"></textarea>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer">Send</button>
+          </form>
+          
+    </div>
+    
 </body>
 </html>

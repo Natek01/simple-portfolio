@@ -30,20 +30,24 @@ main {
 }
 
 .menu {
-    position:fixed;
-    top:0;
-    right:-50vw;
-    width:30vw;
-    height:100vh;
-    background-color:#677495 ;
-    color:#742000;
-    transition: right 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: -100vw; /* Fully hidden off-screen on the left */
+    width: 70vw; /* Adjust width for better UX */
+    height: 100vh;
+    background-color: #677495;
+    color: #ffffff;
+    transition: transform 0.4s ease-in-out; /* Smooth transition */
     z-index: 1000;
+    transform: translateX(0); /* Default position */
 }
 
-.menu .slide {
-    right:0;
+/* When .slide is active, bring it into view */
+.menu.slide {
+    transform: translateX(100%);
 }
+
+
 
 html {
     scroll-behavior:smooth;

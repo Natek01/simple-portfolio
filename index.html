@@ -21,6 +21,8 @@
     
     <link rel="stylesheet" href="styles.css" />
     <script defer src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     
 
 
@@ -38,10 +40,10 @@
       
       <nav class="[&_*]:no-underline text-white">
         <ul class="hidden sm:flex justify-center items-center gap-10 text-[1.2rem] lg:gap-20 max-md:text-[0.7rem] ">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#social">Social</a></li>
+          <li><a class="text-sm" href="#about">About</a></li>
+          <li><a class="text-sm" href="#skills">Skills</a></li>
+          <li><a class="text-sm" href="#contact">Contact</a></li>
+          <li><a class="text-sm" href="#social">Social</a></li>
           <li>
             <a href="contact/inform-me.html" target="_blank" rel="noopener noreferrer">
               <img
@@ -60,10 +62,10 @@
     </div> -->
 
     <main >
-      <section id="about" class="section-1 flex flex-1 justify-center items-center gap-20 max-md:flex-col max-md:gap-1 h-screen scroll-mt-30 mt-8  md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:gap-4 md:max-lg:text-xs md:max-lg:mr-6 md:p-6">
+      <section id="about" class="section-1 flex flex-1 justify-center items-center gap-20 max-md:flex-col max-md:gap-1 h-screen scroll-mt-30 mt-8  md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:gap-4 md:max-lg:text-xs md:max-lg:mr-6 md:p-10">
         <div class="about-text flex flex-col justify-center items-start max-md:items-center">
           <h2 class="">Nahil Bona</h2>
-          <p class="!text-base max-md:!text-xs max-md:!text-center max-md:!my-8 md:!text-sm">
+          <p class="text-base max-md:!text-xs max-md:!text-center max-md:!my-8 ">
             A web developer.<br />
             I craft maintainable and efficient code, and create impactful digital
             experiences. <br />
@@ -90,10 +92,10 @@
 
     
 
-      <section id="skills" class="section-2 flex flex-col justify-center items-center lg:h-screen gap-20 ">
-          <h2 class="max-md:!text-base text-bolder">Experiences and Skills...</h2>
+      <section id="skills" class="section-2 flex flex-col justify-center items-center xl:h-screen gap-20 max-md:gap-10">
+          <h2 class="">Experiences and Skills...</h2>
 
-          <div class="skills-boxes flex flex-wrap justify-center items-center gap-15 max-md:flex-col gap-10">
+          <div class="skills-boxes flex flex-wrap justify-center items-center gap-15 max-md:flex-col max-md:gap-8 md:max-xl:grid grid-cols-2 gap-3">
             <div class="box-one relative image shadow-md ring-1 ring-slate-900/5  p-10 w-[400px] h-[90%] text-lg max-md:text-sm bg-white rounded-sm transition duration-1000 ease-in-out hover:shadow-xl max-sm:w-[80vw]">
               <figure>
                 <img
@@ -104,12 +106,12 @@
                 />
               </figure>
               <h3 class="text-center">Front-end</h3>
-              <ul class="list-none my-3 mx-auto lg:text-base max-sm:text-xs">
+              <ul class="list-none my-3 mx-auto text-sm max-sm:text-xs">
                 <li>HTML5</li>
                 <li>CSS3: including tailwind css and bootstrap.</li>
                 <li>React</li>
               </ul>
-              <p class="text-center self-baseline p-4 lg:text-base max-sm:text-xs">Built strong foundation with all the above stacks.</p>
+              <p class="text-center self-baseline p-4 text-sm max-sm:text-xs">Built strong foundation with all the above stacks.</p>
             </div>
 
             <div class="box-one relative image shadow-md ring-1 ring-slate-900/5 p-2 w-[400px] h-[90%] text-lg bg-white max-md:text-sm  rounded-sm transition duration-1000 ease-in-out hover:shadow-xl max-sm:w-[80vw] ">
@@ -124,12 +126,12 @@
                 />
               </figure>
               <h3 class="text-center mt-4 max-sm:text-sm">Back-end</h3>
-              <ul class="list-none my-3 mx-auto lg:text-base max-sm:text-xs">
+              <ul class="list-none my-3 mx-auto text-sm max-sm:text-xs">
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MongoDB</li>
               </ul>
-              <p class="text-center p-4 lg:text-base self-baseline max-sm:text-xs">
+              <p class="text-center p-4 text-sm self-baseline max-sm:text-xs">
                 Experienced in creating RESTful APIs and working with databases.
               </p>
             </div>
@@ -143,11 +145,11 @@
                 />
               </figure>
               <h3 class="text-center">Tools & Frameworks</h3>
-              <ul class="list-none my-3 mx-auto lg:text-base max-sm:text-xs">
+              <ul class="list-none my-3 mx-auto text-sm max-sm:text-xs">
                 <li>Git</li>
                 <li>VS Code</li>
               </ul>
-              <p class="text-center p-4 lg:text-base self-baseline max-sm:text-xs ">
+              <p class="text-center p-4 text-sm self-baseline max-sm:text-xs ">
                 I'm skilled in using Git for version control, VS Code as a
                 powerful code editor, and browser developer tools for debugging
                 and optimizing web applications..
@@ -164,7 +166,7 @@
       </div> 
 
       <section id="contact" class="section-3 flex flex-col w-full justify-evenly items-center gap-40 h-screen  max-md:py-10 max-md:gap-10" >
-        <h2 class="text-[2rem] max-md:text-sm text-bolder">Contact Me</h2>
+        <h2 class="text-[2rem] max-md:!text-base text-bolder">Contact Me</h2>
         <div class="contact-boxes flex justify-evenly items-center gap-30 max-md:gap-10 w-full flex-wrap">
           <div class="box-two flex flex-col justify-center items-center gap-2">
             <figure class="flex flex-col justify-center items-center gap-2">
@@ -273,6 +275,7 @@
           <p class="max-md:!text-sm"><span class="info">Address: </span class="!text-xs"> Addis Ababa, Ethiopia</p>
         </div>
       </footer>
+      
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

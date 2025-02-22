@@ -1,22 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(){
-  const hamburger = document.querySelector(".hamburger");
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".menu");
+  const hamburger = document.querySelector(".hamburger img");
 
-
-  let isClicked = false;
-
-
-  hamburger.addEventListener("click", toggleMenu);
-
-
-  function toggleMenu(){
-    if(!isClicked){
-      hamburger.classList.add("slide");
-      isClicked = true;
-    }
-    else {
-      hamburger.classList.remove("slide");
-      isClicked = false;
-    }
-  }
- 
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("slide");
+  });
 });
