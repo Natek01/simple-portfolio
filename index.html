@@ -28,22 +28,34 @@
 
   </head>
   <body class="max-md:overflow-x-hidden"> 
-    <header class="fixed top-0 w-full bg-[#3B455A] text-white flex justify-center items-center p-4 z-50 shadow-xl ring-1 ring-slate-900/5 max-md:p-0">
+    <header class="fixed top-0 w-full bg-[#3B455A] text-white flex justify-center items-center p-4 z-50 shadow-xl ring-1 ring-slate-900/5 max-md:p-0 ">
 
-      <div class="hamburger flex justify-end w-full " >
+      <div class="hamburger flex justify-end w-full z-5000" >
         <img src="./icons/hamburger.svg" alt="hamburger icon" class="w-[25px] h-[25px] max-sm:block hidden " />
       </div>
 
-      <div class="menu">
-        <p>A menu content</p>
+      <div class="menu grid place-content-center sm:hidden bg-gray-200 z-30 opacity-50 overflow-hidden w-full h-screen fixed top-0 transition duration-1000 ease-in-out ">
+        <div class="flex flex-col justify-center items-center gap-4  w-full z-40 opacity-100">
+         <nav>
+          <ul class="">
+            <a class="text-white about-font text-sm" href="#about">About</a>
+            <a class="text-white about-font text-sm" href="#skills">Skills</a>
+            <a class="text-white about-font text-sm" href="#contact">Contact</a>
+            <a class="text-white about-font text-sm" href="#social">Social</a>
+  
+          </ul>
+         </nav>
+        </div>
+       
+
       </div>
       
       <nav class="[&_*]:no-underline text-white">
         <ul class="hidden sm:flex justify-center items-center gap-10 text-[1.2rem] lg:gap-20 max-md:text-[0.7rem] ">
-          <li><a class="text-sm" href="#about">About</a></li>
-          <li><a class="text-sm" href="#skills">Skills</a></li>
-          <li><a class="text-sm" href="#contact">Contact</a></li>
-          <li><a class="text-sm" href="#social">Social</a></li>
+          <li><a class=" about-font text-sm" href="#about">About</a></li>
+          <li><a class=" about-font text-sm" href="#skills">Skills</a></li>
+          <li><a class=" about-font text-sm" href="#contact">Contact</a></li>
+          <li><a class=" about-font text-sm" href="#social">Social</a></li>
           <li>
             <a href="contact/inform-me.html" target="_blank" rel="noopener noreferrer">
               <img
@@ -62,10 +74,10 @@
     </div> -->
 
     <main >
-      <section id="about" class="section-1 flex flex-1 justify-center items-center gap-20 max-md:flex-col max-md:gap-1 h-screen scroll-mt-30 mt-8  md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:gap-4 md:max-lg:text-xs md:max-lg:mr-6 md:p-10">
+      <section id="about" class="section-1 flex flex-1 justify-center items-center gap-20 max-md:flex-col max-md:gap-1 h-screen scroll-mt-30 mt-8  md:max-lg:flex md:max-lg:items-center md:max-lg:justify-center md:max-lg:gap-4 md:max-lg:text-xs md:max-lg:mr-6 md:p-10 ">
         <div class="about-text flex flex-col justify-center items-start max-md:items-center">
           <h2 class="">Nahil Bona</h2>
-          <p class="text-base max-md:!text-xs max-md:!text-center max-md:!my-8 ">
+          <p class=" about-font text-base max-md:!text-xs max-md:!text-center max-md:!my-8 ">
             A web developer.<br />
             I craft maintainable and efficient code, and create impactful digital
             experiences. <br />
@@ -73,14 +85,15 @@
           </p>
         </div>
         
-          <figure>
-            <img
+        <figure>
+          <img
             src="images/profile-pc.png"
             alt="my profile picture"
             loading="lazy"
-            class="rounded-full w-[50vh] h-[50vh] max-md:w-[30vh] max-md:w-[30vh] max-md:mt-6 object-cover"
-            />
-          </figure>
+            class="rounded-full w-[50vh] h-[50vh] max-w-[90%] sm:max-w-[70%] md:max-w-[50%] max-sm:w-[150px] max-md:w-[180px] max-lg:w-[200px] object-cover"
+          />
+        </figure>
+        
         
       </section>
 
@@ -92,11 +105,11 @@
 
     
 
-      <section id="skills" class="section-2 flex flex-col justify-center items-center xl:h-screen gap-20 max-md:gap-10">
-          <h2 class="">Experiences and Skills...</h2>
+      <section id="skills" class="section-2 flex flex-col justify-center items-center xl:h-screen gap-20 max-md:gap-10 max-sm:hidden">
+          <h2 class="about-font">Experiences and Skills...</h2>
 
           <div class="skills-boxes flex flex-wrap justify-center items-center gap-15 max-md:flex-col max-md:gap-8 md:max-xl:grid grid-cols-2 gap-3">
-            <div class="box-one relative image shadow-md ring-1 ring-slate-900/5  p-10 w-[400px] h-[90%] text-lg max-md:text-sm bg-white rounded-sm transition duration-1000 ease-in-out hover:shadow-xl max-sm:w-[80vw]">
+            <div class="box-one relative image shadow-md ring-1 ring-slate-900/5  p-10 w-[400px] h-[90%] text-lg max-md:text-sm bg-white rounded-sm transition duration-1000 ease-in-out hover:shadow-xl max-sm:w-[80vw] z-0">
               <figure>
                 <img
                   src="images/front.png"
@@ -134,7 +147,7 @@
               <p class="text-center p-4 text-sm self-baseline max-sm:text-xs">
                 Experienced in creating RESTful APIs and working with databases.
               </p>
-            </div>
+            </div> 
 
             <div class="box-one relative image shadow-md ring-1 ring-slate-900/5 p-2 w-[400px] h-[90%] text-lg bg-white max-md:text-sm rounded-sm transition duration-1000 ease-in-out hover:shadow-xl max-sm:w-[80vw]">
               <figure>
@@ -165,8 +178,8 @@
         <span class="dot w-[4px] h-[4px] my-0 mx-1 rounded-full"></span>
       </div> 
 
-      <section id="contact" class="section-3 flex flex-col w-full justify-evenly items-center gap-40 h-screen  max-md:py-10 max-md:gap-10" >
-        <h2 class="text-[2rem] max-md:!text-base text-bolder">Contact Me</h2>
+      <section id="contact" class="section-3 flex flex-col w-full justify-evenly items-center gap-40 h-screen  max-md:py-10 max-md:gap-10 max-sm:hidden" >
+        <h2 class="about-font text-[2rem] max-md:!text-base text-bolder">Contact Me</h2>
         <div class="contact-boxes flex justify-evenly items-center gap-30 max-md:gap-10 w-full flex-wrap">
           <div class="box-two flex flex-col justify-center items-center gap-2">
             <figure class="flex flex-col justify-center items-center gap-2">
@@ -178,7 +191,7 @@
               />
               <figcaption class="xl:!text-md">email</figcaption>
             </figure>
-            <p class="tracking-wide">nahibtek1@gmail.com</p>
+            <p class="about-font tracking-wide">nahibtek1@gmail.com</p>
           </div>
           <div class="box-two flex flex-col justify-center items-center gap-2">
             <figure class="flex flex-col justify-center items-center gap-3">
@@ -189,16 +202,16 @@
                 alt="Phone Logo"
                 class="h-[50px] w-[50px] max-md:!h-[30px] max-md:!w-[30px]"
               />
-              <figcaption class="xl:!text-md">phone</figcaption>
+              <figcaption class="about-font xl:!text-md">phone</figcaption>
             </figure>
             <p class="tracking-wide">(+251)912336221</p>
           </div>
         </div>
       </section>
 
-      <footer id="social" class="flex justify-evenly text-white py-10 items-center gap-40 w-full max-md:flex-col items-start max-md:gap-10 md:text-sm max-md:p-6">
+      <footer id="social" class="flex justify-evenly text-white py-10 items-center gap-40 w-full max-md:flex-col items-start max-md:gap-10 md:text-sm max-md:p-6 max-sm:hidden">
         <div class="follow-me flex flex-col justify-center items-center gap-4 max-md:!gap-1 max-md:w-full max-md:items-start">
-          <h2 class="max-md:!text-base">follow me</h2>
+          <h2 class="about-font max-md:!text-base">follow me</h2>
           <ul class="flex justify-center items-center gap-6 max-md:gap-4 p-0 ">
             <li>
               <a href="https://www.linkedin.com/in/nahilbona1" 
@@ -221,6 +234,7 @@
                 href="https://www.instagram.com/nahi_bt/"
                 target="_blank"
                 rel="noopener noreferrer"
+                +3601
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
@@ -269,10 +283,10 @@
         </div>
 
         <div class="contact-info flex-col justify-center items-center gap-0.5 ">
-          <h2 class="max-md:!text-base">contact info</h2>
-          <p class="max-md:!text-sm"><span class="info">Email: </span><span class="added !text-xs">nahibtek1@gmail.com</span></p>
-          <p class="max-md:!text-sm"><span class="info">Phone: </span><span class="added !text-xs">(+251)912336221</span></p>
-          <p class="max-md:!text-sm"><span class="info">Address: </span class="!text-xs"> Addis Ababa, Ethiopia</p>
+          <h2 class="about-font max-md:!text-base">contact info</h2>
+          <p class="about-font max-md:!text-sm"><span class="info">Email: </span><span class="added !text-xs">nahibtek1@gmail.com</span></p>
+          <p class="about-font max-md:!text-sm"><span class="info">Phone: </span><span class="added !text-xs">(+251)912336221</span></p>
+          <p class="about-font max-md:!text-sm"><span class="info">Address: </span class="!text-xs"> Addis Ababa, Ethiopia</p>
         </div>
       </footer>
       
