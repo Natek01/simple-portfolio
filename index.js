@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("slide");
   });
 
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("complete")
+  });
   // Smooth scroll & close menu
   links.forEach(link => {
     link.addEventListener("click", function (event) {
